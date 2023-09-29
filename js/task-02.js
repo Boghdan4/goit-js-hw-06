@@ -9,7 +9,7 @@ const ingredients = [
 const ingredientsR = document.querySelector("#ingredients");
 const itemsR = ingredients.map((ingredient) => {
   const item = document.createElement("li");
-  item.textContent(ingredient);
+  item.textContent = ingredient;
   item.classList.add("item");
   return item;
 });

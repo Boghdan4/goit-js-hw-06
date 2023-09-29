@@ -8,12 +8,11 @@ function handleFormSubmit(e) {
   const { email, password } = e.currentTarget.elements;
   if (!email.value.trim() || !password.value.trim()) {
     return alert("Будь-ласка заповніть всі поля");
-  } else {
-    const formData = {
-      email: email.value,
-      password: password.value,
-    };
-    console.log(formData);
-    e.currentTarget.reset();
   }
+  const formData = {
+    email: email.value,
+    password: password.value,
+  };
+  console.log(formData);
+  e.currentTarget.reset();
 }
